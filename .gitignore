@@ -1,0 +1,35 @@
+/.metadata/
+
+# Compiled class files
+*.class
+
+# Build directories
+target/
+bin/
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+
+# Package files
+*.jar
+*.war
+*.ear
+
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
