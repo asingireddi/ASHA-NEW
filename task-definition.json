@@ -1,0 +1,42 @@
+{
+   
+        
+        "family": "FAMILY",
+        "placementConstraints": [],
+       
+       
+        "volumes": [],
+        "requiresCompatibilities": [
+            "EC2"
+        ],
+        
+        "containerDefinitions": [
+            {
+                "memoryReservation": 512,
+                "environment": [],
+                "name": "NAME",
+                "mountPoints": [],
+                "image": "REPOSITORY_URI",
+                "cpu": 256,
+                "portMappings": [
+                    {
+                        "protocol": "tcp",
+                        "containerPort": 8080,
+                        "hostPort": 0
+                    }
+                ],
+                "logConfiguration": {
+                    "logDriver": "awslogs",
+                    "options": {
+                        "awslogs-region": "us-west-2",
+                        "awslogs-stream-prefix": "ecs",
+                        "awslogs-group": "/ecs/mscvp-ENV_LOG"
+                    }
+                },
+                "essential": true,
+                "volumesFrom": []
+            }
+        ]
+        
+    }
+
